@@ -1,23 +1,12 @@
+:root {
+  --main-font: "Montserrat", "Arial", sans-serif;
+  --second-font: "Roboto", "Arial", sans-serif;
+  --third-font: "Kaushan Script", "Arial", cursive;
+}
 body {
   width: 1200px;
   margin: 0 auto;
-  font-family: "Montserrat", "Arial", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  font-family: var(--main-font);
 }
 
 /* HEADER */
@@ -92,7 +81,7 @@ a {
 
 .first-part-title {
   color: rgb(51, 51, 51);
-  font-family: "Kaushan Script", "Arial", cursive;
+  font-family: var(--third-font);
   font-size: 24px;
   font-weight: 400;
   display: block;
@@ -120,8 +109,8 @@ a {
   width: 349px;
 }
 
-.service-list-item:nth-child(-n + 3) {
-  margin-bottom: 100px;
+.service-list-item {
+  margin-bottom: 98px;
 }
 
 .photography {
@@ -158,14 +147,10 @@ a {
 
 .service-item-text {
   color: rgb(153, 153, 153);
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--second-font);
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.service {
-  padding-bottom: 88px;
 }
 
 /* TEAM */
@@ -178,7 +163,7 @@ a {
   width: 943px;
   margin: 0 auto;
   color: #999999;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--second-font);
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -199,11 +184,11 @@ a {
   margin-bottom: 30px;
 }
 
-.team-photo: {
+.team-photo {
   top: 0;
   left: 0;
 
-  transition-property: position, top, left;
+  transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
@@ -234,8 +219,8 @@ a {
 }
 
 .team-occupation {
-  color: #999999;
-  font-family: "Roboto", "Arial", sans-serif;
+  color: rgb(153, 153, 153);
+  font-family: var(--second-font);
   font-size: 15px;
   font-weight: 300;
   line-height: 24px;
@@ -252,10 +237,9 @@ a {
   height: 470px;
   background-image: linear-gradient(
     to top,
-    rgb(252, 227, 138, 0.9),
-    rgb(243, 129, 129, 0.9)
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
   );
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +270,6 @@ a {
   width: 56px;
   height: 56px;
   background-color: rgb(252, 227, 138);
-  /* opacity: 1; */
   background-repeat: no-repeat;
   background-position: center;
 
@@ -352,7 +335,7 @@ a {
   border: 1px solid rgb(231, 231, 231);
   background-color: rgb(255, 255, 255);
   color: #cccccc;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--second-font);
   font-size: 15px;
   font-weight: 300;
   line-height: 24px;
@@ -365,8 +348,9 @@ a {
   background-color: rgb(149, 225, 211);
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
+  font-family: var(--main-font);
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+  outline: none;
 }
