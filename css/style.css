@@ -340,6 +340,7 @@ body {
   font-weight: 300;
   line-height: 24px;
   padding-left: 13px;
+  outline: none;
 }
 
 .contact-form-btn {
@@ -352,5 +353,4 @@ body {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  outline: none;
 }
